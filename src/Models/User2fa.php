@@ -23,6 +23,6 @@ class User2fa extends Model
      */
     public function user(): BelongsTo
     {
-        return $this->belongsTo(config('screen2fa.models.user'));
+        return $this->belongsTo(config('google2fa.models.user'));
     }
 }
